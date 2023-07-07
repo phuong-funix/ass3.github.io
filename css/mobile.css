@@ -1,0 +1,41 @@
+@media screen and (max-width: 576px) {
+  #nav-bar a {
+    padding: 10px 10px 10px 10px;
+    justify-content: flex-start;
+    flex-direction: row;
+    border-left: 0;
+  }
+  #nav-bar .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+  #job-info .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto ;
+    padding: 20px 0;
+  }
+  .my-info:nth-of-type(1),
+  .my-info:nth-of-type(2),
+  .my-info:nth-of-type(3),
+  .my-info:nth-of-type(4),
+  .my-info:nth-of-type(5){
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .award {
+    flex-direction: column;
+  }
+  .award-one {
+    padding-right: 0;
+  }
+  .award-one + .award-one{
+    padding-left: 0;
+    border-left: 0;
+  }
+  .award .image {
+    margin-right: 0;
+  }
+}
